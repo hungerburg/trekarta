@@ -820,10 +820,10 @@
             </m>
         </m>
         <m k="piste:type" v="skitour">
-            <m zoom-max="14">
+            <m zoom-max="13">
                 <line fix="true" src="assets:symbols/winter/skitour_path.svg" symbol-height="10" />
             </m>
-            <m zoom-min="15">
+            <m zoom-min="14">
                 <line fix="true" src="assets:symbols/winter/skitour_path.svg" symbol-height="14" />
                 <text fill="#d53900" use="piste-name" /> <!-- Darken 20% -->
                 <text use="piste-ref" />

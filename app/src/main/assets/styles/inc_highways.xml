@@ -430,16 +430,16 @@
                                     </m>
                                 </m>
                                 <m k="smoothness" v="excellent|good|intermediate|bad">
-                                    <line use="highway:track:good" width="-0.8" />
+                                    <line use="highway:track:good" />
                                 </m>
                                 <m k="smoothness" v="~|very_bad|horrible">
-                                    <line use="highway:track:horrible" width="-0.8" />
+                                    <line use="highway:track:horrible" />
                                 </m>
                                 <m k="smoothness" v="very_horrible">
-                                    <line use="highway:track:very_horrible" width="-0.8" />
+                                    <line use="highway:track:very_horrible" />
                                 </m>
                                 <m k="smoothness" v="impassable">
-                                    <line use="highway:track:impassable" width="-0.8" />
+                                    <line use="highway:track:impassable" />
                                 </m>
                             </m>
                             <m zoom-min="14">
