@@ -306,6 +306,9 @@
                     <m v="wayside_shrine">
                         <symbol src="assets:symbols/tourist/shrine.svg" symbol-color="color:memorials" symbol-percent="80" />
                     </m>
+                    <m v="wayside_cross"> <!-- TODO needs mapcreator -->
+                        <symbol src="assets:symbols/place_of_worship/christian.svg" symbol-color="color:memorials" symbol-percent="70" />
+                    </m>
                 </m>
                 <m k="tourism">
                     <m v="museum">
@@ -530,16 +533,13 @@
                         <text use="poi" />
                     </m>
                 </m>
-                <m zoom-min="17">
-                    <text dy="-16" use="house-number" />
-                </m>
             </m>
         </m>
         <!-- house numbers -->
         <m cat="buildings" k="building|building:part" zoom-min="17">
             <m k="addr:housenumber">
                 <m k="kind" v="~">
-                    <text dy="-14" use="house-name" />
+                    <text dy="-16" use="house-name" />
                 </m>
                 <m k="feature">
                     <text dy="-16" use="house-number" />

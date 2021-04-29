@@ -8,11 +8,11 @@
         <m k="intermittent" v="~|no">
             <area use="water" />
         </m>
-        <text area-size="0.1" caption="true" priority="600" use="water" />
+        <text area-size="0.001" caption="true" priority="600" use="water" />
     </m>
     <m cat="water" closed="yes" k="landuse" v="reservoir|basin">
         <area use="water" />
-        <text area-size="0.1" caption="true" priority="500" use="water" />
+        <text area-size="0.005" caption="true" priority="500" use="water" />
     </m>
     <m closed="yes" k="waterway">
         <m cat="water" v="riverbank|dock">
@@ -54,9 +54,16 @@
                     <m k="intermittent" v="yes">
                         <line fade="10" stipple="15" stipple-ratio="0.3"
                             stipple-stroke="color:transparent" use="river" width="0.3" />
+                        <m cat="hiking">
+                            <line fix="true" fade="10" stipple="15" stipple-ratio="0.3"
+                                stipple-stroke="color:transparent" use="river" width="4"/>
+                        </m>
                     </m>
                     <m k="intermittent" v="~|no">
                         <line fade="10" use="river" width="0.3" />
+                        <m cat="hiking">
+                            <line fix="true" fade="10" use="river" width="5"/>
+                        </m>
                     </m>
                     <m zoom-min="15">
                         <symbol use="oneway-water" />
@@ -67,9 +74,16 @@
                     <m k="intermittent" v="yes">
                         <line fade="13" stipple="10" stipple-ratio="0.3"
                             stipple-stroke="color:transparent" use="river" width="-0.7" />
+                        <m cat="hiking">
+                            <line fix="true" fade="13" stipple="10" stipple-ratio="0.3"
+                                stipple-stroke="color:transparent" use="river" width="2"/>
+                        </m>
                     </m>
                     <m k="intermittent" v="~|no">
                         <line fade="13" use="river" width="-0.7" />
+                        <m cat="hiking">
+                            <line fix="true" fade="13" use="river" width="3"/>
+                        </m>
                     </m>
                     <m zoom-min="17">
                         <symbol use="oneway-water" symbol-percent="40" />

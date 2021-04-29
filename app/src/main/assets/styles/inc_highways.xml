@@ -529,7 +529,9 @@
                                             use="highway-service" />
                                     </m>
                                     <m>
-                                        <line fade="14" outline="service-road" use="highway-service" />
+                                        <line cat="tracks" fade="14" outline="service-road" use="highway-service"  />
+                                        <line cat="hiking" fade="14" outline="service-road" use="highway-service" fix="true" width="2.2" />
+                                        <line cat="cycling" fade="14" outline="service-road" use="highway-service" fix="true" width="2.2" />
                                         <m cat="cycling" k="cycleway:right" v="track">
                                             <line fade="14" outline="cycleway-right" use="highway-service" />
                                         </m>

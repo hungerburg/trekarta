@@ -213,6 +213,10 @@
         stroke-width="1.4" />
     <style-text style="bold_italic" area-size="0.01" caption="true" fill="#7b7712" id="beach"
         priority="600" size="14" stroke="#f1efce" stroke-width="1.4" />
+    <style-text style="italic" area-size="0.01" caption="true" fill="#244a28" id="greens"
+        priority="800" size="14" stroke="#d7ead9" stroke-width="1.4" />
+    <style-text style="italic" area-size="0.01" caption="true" fill="#4a3724" id="browns"
+        priority="800" size="14" stroke="#eee5dc" stroke-width="1.4" />
 
     <!-- Place styles -->
     <style-text caption="true" fill="#893889" id="place_country" size="16" stroke="#ffffff"
@@ -308,25 +312,13 @@
         </m>
         <m cat="agriculture" v="farmyard">
             <area use="farmyard" />
+            <text use="beach" />
         </m>
         <m v="services">
             <area fill="color:highway-services" />
         </m>
         <m v="rest_area">
             <area fill="#f0f0f0" />
-        </m>
-        <m v="parking" zoom-min="16">
-            <m select="first">
-                <m cat="roads-surface" k="surface" v="dirt">
-                    <area fill="#b28f67" />
-                </m>
-                <m cat="roads-surface" k="surface" v="unpaved">
-                    <area fill="#d4c1aa" />
-                </m>
-                <m>
-                    <area fill="#f0f0f0" />
-                </m>
-            </m>
         </m>
         <m cat="urban" k="amenity" v="kindergarten|school|college|university">
             <area fill="#e6e4c5" />
@@ -367,6 +359,19 @@
         <m cat="urban" v="camp_site">
             <area use="greens" />
         </m>
+        <m v="parking" zoom-min="16">
+            <m select="first">
+                <m cat="roads-surface" k="surface" v="dirt">
+                    <area fill="#b28f67" />
+                </m>
+                <m cat="roads-surface" k="surface" v="unpaved">
+                    <area fill="#d4c1aa" />
+                </m>
+                <m>
+                    <area fill="#f0f0f0" />
+                </m>
+            </m>
+        </m>
         <m cat="urban" v="playground">
             <area fill="#f4f4de" />
             <line use="park" />
@@ -402,6 +407,7 @@
     <m closed="yes" e="way" k="natural">
         <m cat="nature" v="glacier">
             <area fill="#ddecec" />
+            <text use="water" /> <!-- TODO needs mapcreator -->
         </m>
         <m cat="forest" v="forest|wood">
             <m zoom-max="11">
@@ -410,6 +416,7 @@
             <m zoom-min="12">
                 <area use="wood" mesh="true" />
             </m>
+            <text use="greens" /> <!-- TODO needs mapcreator -->
         </m>
         <m cat="urban" v="beach">
             <area fill="#f7f5c8" />
@@ -432,9 +439,11 @@
         </m>
         <m cat="nature" v="heath">
             <area fade="12" use="heath" />
+            <text use="greens" />
         </m>
         <m cat="nature" v="grassland">
             <area fade="12" use="grass" />
+            <text use="greens" />
         </m>
         <m cat="nature" v="scree|shingle">
             <m zoom-max="13">
@@ -444,10 +453,12 @@
                 <area fade="10" use="scree" />
                 <area src="assets:patterns/scree.svg" />
             </m>
+            <text use="browns" />
         </m>
         <m cat="nature" v="bare_rock">
             <area use="scree" />
             <area src="assets:patterns/rock_overlay.png" />
+            <text use="browns" />
         </m>
         <m cat="nature" v="marsh">
             <m zoom-max="13">
@@ -501,11 +512,11 @@
     </m>
 
     <m cat="mountains" e="way" k="natural" v="ridge">
-        <line src="assets:patterns/ridge.svg" symbol-color="color:cliff-darker" />
+        <line src="assets:patterns/ridge.svg" symbol-color="color:cliff-darker" symbol-percent="141" />
         <text use="mountain" />
     </m>
     <m cat="mountains" e="way" k="natural" v="arete">
-        <line src="assets:patterns/arete.svg" symbol-color="color:cliff-darker" />
+        <line src="assets:patterns/arete.svg" symbol-color="color:cliff-darker" symbol-percent="141" />
         <text use="mountain" />
     </m>
 
